@@ -6,7 +6,7 @@ class Database {
     private $db_name = "cogito";
     private $username = "root";
     private $password = "";
-    public conn;
+    public $conn;
 
     // Method to get the database connection
     public function getConnection() {
