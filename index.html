@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cogito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div className="startpagina-container">
+        <nav>
+            <a href="">
+                <h2 class="site-title">COGITO</h2>
+            </a>
+            <ul>
+                <li><a class="nav-link" href="">Voordelen</a></li>
+                <li><a class="nav-link" href="">Hoe werkt het?</a></li>
+                <li><a class="nav-link" href="">Waarom Cogito?</a></li>
+            </ul>
+            <a class="login-link" href="">Login</a>
+        </nav>
+        <div class="startpagina-content">
+            <img class="image" src="./Assets/login.png" />
+            <div class="registratie-form">
+                <form method="post" id="signup_form" autocomplete="off">
+                    <input type="text" name="username" placeholder="Gebruikersnaam" /><br />
+                    <input type="email" name="email" placeholder="Email" /><br />
+                    <input type="password" name="password" placeholder="Wachtwoord" /><br />
+                    <input type="password" placeholder="Herhaal wachtwoord" /><br />
+                    <br />
+                    <button type="submit" id="signup">Registreer</button>
+                    <p id="success_fail_msg"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
