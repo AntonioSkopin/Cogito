@@ -5,37 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cogito</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div className="startpagina-container">
-        <nav>
-            <a href="">
-                <h2 class="site-title">COGITO</h2>
-            </a>
-            <ul>
+    <!-- navbar -->
+    <nav>
+        <a href="#">
+            <h2 class="site-title">COGITO</h2>
+        </a>
+        <div class="nav-links">
+            <ul class="ul1">
                 <li><a class="nav-link" href="">Voordelen</a></li>
-                <li><a class="nav-link" href="">Hoe werkt het?</a></li>
-                <li><a class="nav-link" href="">Waarom Cogito?</a></li>
+                <li><a class="nav-link" href="">Hoe werkt het</a></li>
+                <li><a class="nav-link" href="">Waarom Cogito</a></li>
             </ul>
-            <a class="login-link" href="">Login</a>
-        </nav>
-        <div class="startpagina-content">
-            <img class="image" src="./Assets/login.png" />
-            <div class="registratie-form">
-                <form method="post" id="signup_form" autocomplete="off">
-                    <input type="text" name="username" placeholder="Gebruikersnaam" /><br />
-                    <input type="email" name="email" placeholder="Email" /><br />
-                    <input type="password" name="password" placeholder="Wachtwoord" /><br />
-                    <input type="password" placeholder="Herhaal wachtwoord" /><br />
-                    <br />
-                    <button type="submit" id="signup">Registreer</button>
-                    <p id="success_fail_msg"></p>
-                </form>
-            </div>
+            <ul class="ul2">
+                <li><a class="login-link" id="login" href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- container -->
+    <div class="startpagina-content">
+        <img class="startpage_image" src="./Assets/login.png" />
+
+        <div class="registratie-form">
+            <h2>Registreer hier</h2>
+            <form method="post" id="sign_up_form" autocomplete="off">
+                <input type="text" name="username" placeholder="Gebruikersnaam" /><br />
+                <input type="text" name="email" placeholder="Email" /><br />
+                <input type="password" name="password" placeholder="Wachtwoord" /><br />
+                <br />
+                <button class="registreer-bttn" type="submit">Registreer</button><br>
+                <div id="signup_response"></div>
+            </form>
         </div>
     </div>
+    <!-- /container -->
+
+    <div class="voordelen">
+        <section class="text">
+            <h2 class="voordeel-title">Versnel productiviteit</h2>
+            <p class="voordeel-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </section>
+        <img src="./Assets/undraw_fitness_stats_sht6.png" alt="">
+    </div>
+
+    <div class="hoe-werkt-het">
+        <h1 class="hwh-title">Hoe werkt het?</h1>
+        <div class="hwh-text-sections">
+            <section class="hwh-text">
+                <p class="hwh-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.
+                </p>
+            </section>
+            <section class="hwh-text">
+                <p class="hwh-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                    duo
+                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    amet.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <div class="waarom">
+        <img src="./Assets/undraw_season_change_f99v.png" alt="">
+        <section class="waarom-text">
+            <h2 class="waarom-title">Versnel productiviteit</h2>
+            <p class="waarom-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                invidunt ut labore
+                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Antonio Skopin &copy; 2020</p>
+    </footer>
+
+    <!-- jQuery & Bootstrap 4 JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>

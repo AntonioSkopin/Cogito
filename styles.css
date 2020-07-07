@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: row;
+    line-height: 0.5rem;
+}
+
+.site-title {
+    color: #17DD87;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.ul1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ul2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    padding-right: 1.5rem;
+}
+
+li {
+    list-style: none;
+    margin: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #17DD87;
+}
+
+.login-link {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid #17DD87;
+    border-radius: 0.1rem;
+    color: #000;
+}
+
+.login-link:hover {
+    background-color: #17DD87;
+    color: #fff;
+    transition: 0.7s;
+}
+/* Nav Bar */
+
+/* Startpagina content */
+.startpagina-content {
+    display: flex;
+}
+
+.startpage_image {
+    width: 50vw;
+}
+
+.registratie-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+    text-align: center;
+}
+
+.registratie-form > h2 {
+    font-size: 2rem;
+}
+
+input {
+    background-color: #F1F1F1;
+    border: none;
+    padding: 0.9rem;
+    margin: 0.5rem;
+    width: 22vw;
+    border-radius: 0.1rem;
+}
+
+.registreer-bttn {
+    justify-content: center;
+    background-color: #17DD87;
+    color: #fff;
+    border: none;
+    padding: 0.9rem;
+    margin: 0.5rem;
+    width: 20vw;
+    border-radius: 0.1rem;
+    cursor: pointer;
+}
+
+.registreer-bttn:hover{
+    background-color: #14ac6a;
+    transition: 0.7s;
+}
+
+input:focus {
+    outline: none;
+}
+/* Startpagina content */
+
+/* Voordelen section */
+.voordelen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.voordelen > img {
+    width: 40vw;
+}
+
+.text {
+    margin-right: 15rem;
+}
+
+.voordeel-p, .voordeel-title {
+    text-align: center;
+    width: 30vw;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+/* Voordelen section */
+
+/* Hoe werkt het section */
+.hoe-werkt-het {
+    background-color: #17DD87;
+    margin-top: 15rem;
+    color: #fff;
+    height: 70vh;
+}
+
+.hwh-title {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.hwh-text-sections {
+    display: flex;
+    justify-content: center;
+}
+
+.hwh-text {
+    text-align: center;
+    width: 25vw;
+    margin: 0 12rem;
+}
+/* Hoe werkt het section */
+
+/* Waarom section */
+.waarom {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.waarom > img {
+    width: 40vw;
+}
+
+.waarom-p, .waarom-title {
+    text-align: center;
+    width: 30vw;
+}
+
+.waarom-text {
+    margin-left: 15rem;
+}
+/* Waarom section */
+
+/* Footer section */
+footer {
+    display: flex;
+    align-content: center;
+    margin-top: 15rem;
+    background-color: #17DD87;
+    height: 10vh;
+}
+
+footer > p {
+    color: #fff;
+    padding-left: 2rem;
+    justify-content: end;
+}
+/* Footer section */
