@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <a href="index.html">
+            <h2 class="site-title">COGITO</h2>
+        </a>
+        <div class="nav-links">
+            <ul class="ul1">
+                <li><a class="nav-link" href="index.html#voordelen">Voordelen</a></li>
+                <li><a class="nav-link" href="index.html#hoe-werkt-het">Hoe werkt het</a></li>
+                <li><a class="nav-link" href="index.html#waarom">Waarom Cogito</a></li>
+            </ul>
+            <ul class="ul2">
+                <li><a class="login-link" id="login" href="index.html">Registreer</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- container -->
+    <div class="startpagina-content">
+        <img id="img" class="startpage_image" src="./Assets/login.png" />
+
+        <div class="registratie-form">
+            <h2>Log hier in</h2>
+            <form method="post" id="login_form" autocomplete="off">
+                <input type="text" name="email" placeholder="Email" /><br />
+                <input type="password" id="password" name="password" placeholder="Wachtwoord" /><br />
+                <br />
+                <button class="registreer-bttn" type="submit">Log in</button><br><br>
+                <div id="login_response"></div><br>
+                <a href="index.html">Nog geen account? Maak hier dan een gratis account!</a>
+            </form>
+        </div>
+    </div>
+    <!-- /container -->
+
+    <!-- jQuery & Bootstrap 4 JavaScript libraries -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

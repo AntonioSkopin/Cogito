@@ -16,12 +16,12 @@
         </a>
         <div class="nav-links">
             <ul class="ul1">
-                <li><a class="nav-link" href="">Voordelen</a></li>
-                <li><a class="nav-link" href="">Hoe werkt het</a></li>
-                <li><a class="nav-link" href="">Waarom Cogito</a></li>
+                <li><a class="nav-link" href="#voordelen">Voordelen</a></li>
+                <li><a class="nav-link" href="#hoe-werkt-het">Hoe werkt het</a></li>
+                <li><a class="nav-link" href="#waarom">Waarom Cogito</a></li>
             </ul>
             <ul class="ul2">
-                <li><a class="login-link" id="login" href="#">Login</a></li>
+                <li><a class="login-link" id="login" href="login.html">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -29,10 +29,10 @@
 
     <!-- container -->
     <div class="startpagina-content">
-        <img class="startpage_image" src="./Assets/login.png" />
+        <img id="img" class="startpage_image" src="./Assets/login.png" />
 
         <div class="registratie-form">
-            <h2>Registreer hier</h2>
+            <h2>Maak een gratis account</h2>
             <form method="post" id="sign_up_form" autocomplete="off">
                 <input type="text" name="username" placeholder="Gebruikersnaam" /><br />
                 <input type="text" name="email" placeholder="Email" /><br />
@@ -46,7 +46,7 @@
     </div>
     <!-- /container -->
 
-    <div class="voordelen">
+    <div id="voordelen" class="voordelen">
         <section class="text">
             <h2 class="voordeel-title">Versnel productiviteit</h2>
             <p class="voordeel-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
@@ -57,7 +57,7 @@
         <img src="./Assets/undraw_fitness_stats_sht6.png" alt="">
     </div>
 
-    <div class="hoe-werkt-het">
+    <div id="hoe-werkt-het" class="hoe-werkt-het">
         <h1 class="hwh-title">Hoe werkt het?</h1>
         <div class="hwh-text-sections">
             <section class="hwh-text">
@@ -79,7 +79,7 @@
         </div>
     </div>
 
-    <div class="waarom">
+    <div id="waarom" class="waarom">
         <img src="./Assets/undraw_season_change_f99v.png" alt="">
         <section class="waarom-text">
             <h2 class="waarom-title">Versnel productiviteit</h2>
@@ -102,16 +102,18 @@
     <script src="signup.js"></script>
     <script>
         // On scroll call this function
-        $(window).scroll(function () {
-            // If user scrolled more than 20 pixels
-            if ($(window).scrollTop() >= 20) {
-                // Add shadow to navbar
-                $('nav').addClass('add-shadow');
-            }
-            else {
-                // If user is top of site remove shadow
-                $('nav').removeClass('add-shadow');
-            }
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // If user scrolled more than 20 pixels
+                if ($(window).scrollTop() >= 20) {
+                    // Add shadow to navbar
+                    $('nav').addClass('add-shadow');
+                }
+                else {
+                    // If user is top of site remove shadow
+                    $('nav').removeClass('add-shadow');
+                }
+            });
         });
 
     </script>
