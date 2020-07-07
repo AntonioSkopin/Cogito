@@ -36,7 +36,8 @@
             <form method="post" id="sign_up_form" autocomplete="off">
                 <input type="text" name="username" placeholder="Gebruikersnaam" /><br />
                 <input type="text" name="email" placeholder="Email" /><br />
-                <input type="password" name="password" placeholder="Wachtwoord" /><br />
+                <input type="password" id="password" name="password" placeholder="Wachtwoord" /><br />
+                <input type="password" id="password2" name="password2" placeholder="Herhaal wachtwoord" /><br />
                 <br />
                 <button class="registreer-bttn" type="submit">Registreer</button><br>
                 <div id="signup_response"></div>
@@ -99,6 +100,21 @@
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="signup.js"></script>
+    <script>
+        // On scroll call this function
+        $(window).scroll(function () {
+            // If user scrolled more than 20 pixels
+            if ($(window).scrollTop() >= 20) {
+                // Add shadow to navbar
+                $('nav').addClass('add-shadow');
+            }
+            else {
+                // If user is top of site remove shadow
+                $('nav').removeClass('add-shadow');
+            }
+        });
+
+    </script>
 </body>
 
 </html>
